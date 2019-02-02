@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>{{title}}</title>
+</head>
+<body>
+   <div class="container">
+  <h2>Product details</h2>
+  <form action="" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" value="{{product.name}}" name="name" readonly>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <input type="text" class="form-control" value="{{product.quantity}}" name="quantity" readonly>
+    </div>
+    <div class="form-group">
+      <label for="variant_title">Variant title:</label>
+      <input type="text" class="form-control" value="{{product.variant_title}}" name="variant_title" readonly>
+    </div>
+    <div class="form-group">
+      <label for="vendor">Vendor:</label>
+      <input type="text" class="form-control" value="{{product.vendor}}" name="vendor" readonly>
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="number" class="form-control" value={{product.price}} name="price" readonly>
+    </div>
+    <div class="form-group">
+      <label for="total_discount">Total discount:</label>
+      <input type="number" class="form-control" value={{product.total_discount}} name="total_discount" readonly>
+    </div>
+    {{!-- <button type="submit" class="btn btn-primary">edit</button> --}}
+    <a href="/"><button type="button" class="btn btn-default">back</button></a>
+  </form>
+</div>
+</body>
+</html>
